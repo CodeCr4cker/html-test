@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Leading Builder in YourCity: Quality construction, luxury apartments, commercial spaces. View projects, download brochures, contact us today!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YourBuilder Co. | Building Your Dreams</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.png">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <img src="logo.png" alt="Logo">
+    <div class="spinner"></div>
+    <span>Loading...</span>
+  </div>
 
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" title="Toggle Day/Night Theme">🌙</button>
+
+  <!-- Main Content -->
+  <div id="app" class="hidden">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <nav>
+        <img src="logo.png" alt="Logo" class="logo">
+        <span class="company-name">YourBuilder Co.</span>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h1>Building Your Dreams</h1>
+        <p>Quality, Innovation & Trust. Residential and Commercial Experts.</p>
+        <button onclick="scrollToSection('projects')">View Projects</button>
+        <button onclick="scrollToSection('contact')" class="outline">Contact Us</button>
+      </div>
+      <div class="hero-bg"></div>
+    </section>
+    
+    <!-- About Us -->
+    <section class="about" id="about">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <div>
+          <h3>Our Story</h3>
+          <p>With over 20 years of experience, YourBuilder Co. leads the industry in innovative residential, commercial, and luxury projects in YourCity. Certified by the National Builders Association and ISO 9001:2015. Our team delivers on time, every time.</p>
+          <ul>
+            <li>🏆 50+ Projects Delivered</li>
+            <li>👷‍♂️ 30+ Team Members</li>
+            <li>🛡 100% Quality Assurance</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Our Skills</h3>
+          <div class="skill">
+            <span>Residential Projects</span>
+            <div class="progress-bar" data-value="95"></div>
+          </div>
+          <div class="skill">
+            <span>Commercial Projects</span>
+            <div class="progress-bar" data-value="90"></div>
+          </div>
+          <div class="skill">
+            <span>Luxury Apartments</span>
+            <div class="progress-bar" data-value="85"></div>
+          </div>
+          <div class="skill">
+            <span>Customer Satisfaction</span>
+            <div class="progress-bar" data-value="97"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Optional Team Members -->
+      <!--
+      <h3>Our Team</h3>
+      <div class="team">
+        <div class="member">
+          <img src="team1.jpg" alt="Team Member">
+          <span>John Doe<br>CEO</span>
+        </div>
+        ...
+      </div>
+      -->
+    </section>
+    
+    <!-- Projects / Portfolio -->
+    <section class="portfolio" id="projects">
+      <h2>Our Projects</h2>
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="residential">Residential</button>
+        <button data-filter="commercial">Commercial</button>
+        <button data-filter="luxury">Luxury</button>
+        <button data-filter="ongoing">Ongoing</button>
+        <button data-filter="completed">Completed</button>
+      </div>
+      <div class="projects-grid">
+        <!-- Project Cards (Populated by JS) -->
+      </div>
+    </section>
+    
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-details">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- Lightbox for Photo/Video Gallery -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="Gallery Image">
+        <video id="lightbox-video" controls style="display:none;max-width:90vw;max-height:70vh;"></video>
+      </div>
+      <span class="lightbox-prev" onclick="prevLightbox()">&lt;</span>
+      <span class="lightbox-next" onclick="nextLightbox()">&gt;</span>
+    </div>
+
+    <!-- Contact Page -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-wrapper">
+        <form id="contact-form" autocomplete="off">
+          <label>Name</label>
+          <input type="text" required>
+          <label>Email</label>
+          <input type="email" required>
+          <label>Message</label>
+          <textarea rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <p><b>Phone:</b> <a href="tel:+1234567890">+1 234 567 890</a></p>
+          <p><b>Email:</b> <a href="mailto:info@yourbuilderco.com">info@yourbuilderco.com</a></p>
+          <p>
+            <b>Follow:</b> 
+            <a href="#" target="_blank">Instagram</a> | 
+            <a href="#" target="_blank">Facebook</a> | 
+            <a href="#" target="_blank">LinkedIn</a>
+          </p>
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      &copy; 2025 YourBuilder Co. | Designed by YourTeam
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
