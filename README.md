@@ -1,6 +1,6 @@
 ```
-├──Progect/
-   ├── imdex.html           
+├──Project/
+   ├── index.html           
    ├── script.js            
    ├── styls.css           
    └── image/              
