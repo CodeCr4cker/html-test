@@ -52,7 +52,8 @@ const projects = [
   {
     name: "Sunshine Residency",
     type: "residential",
-    status: "click me",
+    status: "Completed",
+    details: "Click Me",
     price: "₹65 Lakh onwards",
     mainImg: "project1.jpg",
     images: ["project1.jpg", "project1_2.jpg", "project1_3.jpg"],
@@ -67,7 +68,8 @@ const projects = [
   {
     name: "Platinum Towers",
     type: "commercial",
-    status: "click me",
+    status: "ongoing",
+    details: "Click Me",
     price: "₹1.5 Cr onwards",
     mainImg: "project2.jpg",
     images: ["project2.jpg", "project2_2.jpg", "project2_3.jpg"],
@@ -82,7 +84,8 @@ const projects = [
   {
     name: "Elite Villas",
     type: "luxury",
-    status: "click me",
+    status: "Completed",
+    details: "Click Me",
     price: "₹3.25 Cr onwards",
     mainImg: "project3.jpg",
     images: ["project3.jpg", "project3_2.jpg", "project3_3.jpg"],
