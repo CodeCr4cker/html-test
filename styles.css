@@ -54,6 +54,28 @@ nav {
   display:flex; align-items:center; justify-content:space-between;
   padding:1em 5vw; backdrop-filter: blur(2px);
 }
+.slideshow-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.slide-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide-img.active {
+  opacity: 1;
+  position: relative;
+}
+
 nav .logo { width:46px; height:46px; border-radius:7px; margin-right:1em;}
 nav .company-name { font-size:1.4rem; font-weight:700;}
 nav ul { display:flex; gap:2em; list-style:none; padding:0; margin:0;}
