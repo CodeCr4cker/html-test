@@ -56,7 +56,7 @@ const projects = [
    // details: "Click Me",
     price: "₹65 Lakh onwards",
     mainImg: "https://raw.githubusercontent.com/CodeCr4cker/html-test/main/image/Sunshine%20Residency1.jpg",
-    images: ["https://raw.githubusercontent.com/CodeCr4cker/html-test/main/image/Sunshine%20Residenc2.jpg", "https://raw.githubusercontent.com/CodeCr4cker/html-test/main/image/Sunshine%20Residency3.jpg", "https://raw.githubusercontent.com/CodeCr4cker/html-test/main/image/Sunshine%20Residency4.jpg"],
+    images: ["https://raw.githubusercontent.com/CodeCr4cker/html-test/main/image/Sunshine%20Residency2.jpg", "https://raw.githubusercontent.com/CodeCr4cker/html-test/main/image/Sunshine%20Residency3.jpg", "https://raw.githubusercontent.com/CodeCr4cker/html-test/main/image/Sunshine%20Residency4.jpg"],
     description: "Luxury residential complex with modern amenities, 2/3 BHK apartments, gym, pool, and lush gardens.",
     floorplan: "https://raw.githubusercontent.com/CodeCr4cker/html-test/main/image/Sunshine%20Residency4.jpg",
    // location: "https://goo.gl/maps/abcd123",
