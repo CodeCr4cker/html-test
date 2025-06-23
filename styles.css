@@ -79,6 +79,11 @@ nav a:hover { color:var(--primary);}
   background: var(--primary); color:var(--bg); font-weight:600; cursor:pointer;
   transition:background 0.2s;
 }
+.CEO{
+  height: 30rem;
+  width: 30rem;
+  
+}
 .hero-content .outline {
   background:transparent; color:var(--primary); border:2px solid var(--primary);
 }
