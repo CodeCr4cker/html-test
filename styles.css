@@ -6,7 +6,9 @@
   --primary-pink: #ff0000;
   --bg: #fff;
   --ceo: Black;
+  --black: #000;
   --card-bg: #f9f9f9;
+  --testimonial-bg: #f6e9ff;
   --progress-bg: #e2e2e2;
   --progress-fill: #3658dc;
   --modal-bg: rgba(0,0,0,0.7);
@@ -18,7 +20,9 @@
   --primary-pink: white;
   --text: #f5f5f5;
   --bg: #131313;
+  --black: #fff;
   --ceo: white;
+  --testimonial-bg: #2e2e2e;
   --card-bg: #232323;
   --progress-bg: #222;
   --progress-fill: #ffa500;
@@ -75,7 +79,26 @@ nav {
   opacity: 1;
   position: relative;
 }
-
+.testimonials-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background: var(--testimonial-bg);
+  border-radius: 1rem;
+  padding: 2rem 1rem 3rem 1rem;
+  overflow: hidden;
+}
+.testimonial {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--black);
+  min-height: 10rem;
+}
+.testimonial.active {
+  display: block;
+  animation: fadeIn 0.8s;
+}
 nav .logo { width:46px; height:46px; border-radius:7px; margin-right:1em;}
 nav .company-name { font-size:1.4rem; font-weight:700;}
 nav ul { display:flex; gap:2em; list-style:none; padding:0; margin:0;}
