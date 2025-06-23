@@ -112,7 +112,7 @@ nav a:hover { color:var(--primary);}
   flex-direction: row; /* Ensure horizontal by default */
   align-items: center;
   justify-content: space-between;
-  gap: 2em;
+  gap: 1em;
 }
 .about-content > div {
   flex: 1 1 48%; /* Adjust for 2 columns on desktop */
