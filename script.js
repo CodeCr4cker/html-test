@@ -37,6 +37,21 @@ themeToggle.onclick = function() {
 window.scrollToSection = function(id) {
   document.getElementById(id).scrollIntoView({behavior:'smooth', block:'start'});
 };
+// Testimonials carousel
+const testimonials = document.querySelectorAll('.testimonial');
+let activeTestimonial = 0;
+function showTestimonial(idx) {
+  testimonials.forEach((el, i) => el.classList.toggle('active', i === idx));
+}
+document.querySelector('.testimonials-carousel .next').onclick = () => {
+  activeTestimonial = (activeTestimonial + 1) % testimonials.length;
+  showTestimonial(activeTestimonial);
+};
+document.querySelector('.testimonials-carousel .prev').onclick = () => {
+  activeTestimonial = (activeTestimonial - 1 + testimonials.length) % testimonials.length;
+  showTestimonial(activeTestimonial);
+};
+showTestimonial(activeTestimonial);
 
 // Animate Progress Bars (About Us)
 function animateProgressBars() {
