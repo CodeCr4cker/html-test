@@ -151,9 +151,7 @@ window.openProject = function(idx) {
     <b>Amenities:</b> <ul><li>${p.amenities.join('</li><li>')}</li></ul>
     <b>Price & Availability:</b> <div>${p.price} - ${p.available}</div>
     <b>Floor plan:</b><br><img src="${p.floorplan}" class="floorplan" alt="Floorplan">
-    <div><a href="${p.brochure}" class="brochure" download>Download Brochure</a></div>
-    <b>Location:</b>
-    <div class="map-responsive">${p.mapEmbed}</div>
+    
   `;
   modal.style.display = "flex";
 };
