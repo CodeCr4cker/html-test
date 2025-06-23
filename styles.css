@@ -279,34 +279,83 @@ footer {
 .lightbox-next { right:2vw;}
 .gallery-zoom { display:inline-block; margin-left:4px; color:var(--primary); font-size:1.2em; cursor:pointer; vertical-align:middle;}
 @media (max-width: 900px) {
-  .about-content, .contact-wrapper { flex-direction:column; gap:1.5em;}
-  CEO {
+  .about-content,
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .CEO {
     width: 14rem;
     height: 14rem;
     bottom: 1rem;
   }
+
+  .slideshow-container {
+    height: 35vh;
+  }
 }
+
 @media (max-width: 650px) {
-  nav ul { gap:1em;}
-  .hero-content { padding-top:5vw; padding-bottom:10vw;}
-  .projects-grid { grid-template-columns:1fr;}
-  .modal .modal-content { padding:1em;}
-  .gallery img { width:56px; height:40px;}
-  .lightbox img, .lightbox video { max-height:50vh;}
-   
+  nav ul {
+    gap: 1em;
+  }
+
+  .hero-content {
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal .modal-content {
+    padding: 1em;
+  }
+
+  .gallery img {
+    width: 56px;
+    height: 40px;
+  }
+
+  .lightbox img,
+  .lightbox video {
+    max-height: 50vh;
+  }
+
   .CEO {
     width: 12rem;
     height: 12rem;
     bottom: 1rem;
   }
+
+  .slideshow-container {
+    height: 28vh;
+  }
 }
+
 @media (max-width: 500px) {
-  nav { flex-direction:column; align-items:flex-start;}
-  .hero-content h1 { font-size:2rem;}
-  .hero-content p { font-size:1em;}
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
   .CEO {
     width: 10rem;
     height: 10rem;
     bottom: 0.5rem;
+  }
+
+  .slideshow-container {
+    height: 22vh;
   }
 }
