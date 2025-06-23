@@ -106,8 +106,18 @@ nav a:hover { color:var(--primary);}
 }
 .hero-content button:hover, .hero-content .outline:hover { background:var(--accent); color:var(--bg);}
 .about, .portfolio, .contact { padding: 5vw 5vw 2vw 5vw; }
-.about-content { display:flex; flex-wrap:wrap; gap:2em;}
-.about-content > div { flex:1 1 250px; }
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; /* Ensure horizontal by default */
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+.about-content > div {
+  flex: 1 1 48%; /* Adjust for 2 columns on desktop */
+}
+
 .skill { margin-bottom:1em; }
 .skill span { display:block; margin-bottom:0.4em; font-size:1.01em;}
 .progress-bar {
