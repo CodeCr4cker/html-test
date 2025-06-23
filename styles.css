@@ -250,7 +250,48 @@ nav a:hover { color:var(--primary);}
 #contact-form { flex:1 1 300px; display:flex; flex-direction:column; gap:0.6em;}
 #contact-form input, #contact-form textarea { padding:0.7em; border-radius:6px; border:1px solid #ccc; background:var(--card-bg);}
 #contact-form button { background:var(--primary); color:var(--bg); padding:0.8em; border:none; border-radius:6px; font-weight:600; margin-top:0.5em; cursor:pointer;}
-.contact-info { flex:1; }
+.contact-info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.6;
+}
+
+.contact-info b {
+  color: #3658dc;
+}
+
+.contact-link {
+  color: #ffa500;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.contact-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  background-color: #ffa500;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #ff6600;
+}
+
+.contact-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 footer {
   background:var(--secondary); color:var(--text); text-align:center; padding:1.2em 0; font-size:0.98em; margin-top:2em;
 }
