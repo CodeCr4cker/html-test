@@ -116,11 +116,48 @@ nav a:hover { color:var(--primary);}
 .about-content {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row; /* Ensure horizontal by default */
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 1em;
+  gap: 2em;
 }
+
+/* Left: CEO Image */
+.about-left {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Right: Name + Bio + Skills */
+.about-right {
+  flex: 1 1 65%;
+}
+
+/* CEO Name */
+.CEO-name h2 {
+  margin-bottom: 0.4em;
+  font-size: 1.6rem;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-left,
+  .about-right {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .CEO-name ul {
+    padding-left: 1.2em;
+    text-align: left;
+    display: inline-block;
+  }
+}
+
 .about-content > div {
   flex: 1 1 48%; /* Adjust for 2 columns on desktop */
 }
