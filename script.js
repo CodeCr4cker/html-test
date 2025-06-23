@@ -214,6 +214,24 @@ document.addEventListener('keydown', function(e) {
     else if(e.key === 'Escape') closeLightbox();
   }
 });
+// image auto slide
+  const slides = document.querySelectorAll(".slide-img");
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) slide.classList.add("active");
+    });
+  }
+
+  function startSlideshow() {
+    showSlide(currentSlide);
+    currentSlide = (currentSlide + 1) % slides.length;
+    setTimeout(startSlideshow, 3000); // 3 seconds delay
+  }
+
+  window.addEventListener('load', startSlideshow);
 
 // Contact Form Handler
 document.getElementById('contact-form').onsubmit = function(e) {
