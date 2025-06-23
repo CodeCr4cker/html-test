@@ -85,7 +85,7 @@ nav a:hover { color:var(--primary);}
   transition:background 0.2s;
 }
 .CEO-name{
-  background: var(--ceo);
+  color: var(--ceo);
 }
 
 .CEO {
