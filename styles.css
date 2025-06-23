@@ -5,6 +5,7 @@
   --text: #222;
   --primary-pink: #ff0000;
   --bg: #fff;
+  --ceo: white;
   --card-bg: #f9f9f9;
   --progress-bg: #e2e2e2;
   --progress-fill: #3658dc;
@@ -17,6 +18,7 @@
   --primary-pink: white;
   --text: #f5f5f5;
   --bg: #131313;
+  --ceo: yellow;
   --card-bg: #232323;
   --progress-bg: #222;
   --progress-fill: #ffa500;
@@ -83,12 +85,9 @@ nav a:hover { color:var(--primary);}
   transition:background 0.2s;
 }
 .CEO-name{
-  color:Red;
-  
+  background: var(--ceo);
 }
-.CEO-name:hover{
-  color:blue;
-}
+
 .CEO {
   width: 16rem;
   height: 16rem;
