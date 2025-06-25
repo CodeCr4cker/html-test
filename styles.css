@@ -132,7 +132,25 @@ nav {
   */
   
     }
+#textbox{
+  max-height: 200px; /* adjust height as needed */
+  overflow-y: auto;
+  padding-right: 10px; /* space for scrollbar */
+}
 
+/* Optional: custom scrollbar styling */
+#textBox::-webkit-scrollbar {
+  width: 6px;
+}
+
+#textBox::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+#textBox::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
     .text {
       overflow: hidden;
       max-height: 100px;
@@ -146,8 +164,7 @@ nav {
 
     .fade {
       position: relative;
-      overflow-y: auto;        /* Enables vertical scroll */
-  overflow-x: hidden;      /* Hides horizontal scroll */
+      
     
     }
 
