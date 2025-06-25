@@ -132,24 +132,12 @@ nav {
   */
   
     }
-.text{
-  max-height: 200px; /* adjust height as needed */
-  overflow-y: auto;
-  padding-right: 10px; /* space for scrollbar */
-}
-
-/* Optional: custom scrollbar styling */
-.text::-webkit-scrollbar {
-  width: 6px;
-}
-
-.text::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-
-.text::-webkit-scrollbar-thumb:hover {
-  background: #555;
+@media (max-width: 600px) {
+  .content-box .text {
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
 }
     .text {
       overflow: hidden;
