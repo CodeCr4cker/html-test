@@ -9,7 +9,14 @@ window.onload = function() {
     }, 600);
   }, 3000);
 };
+// experience 
+  const textBox = document.getElementById('textBox');
+    const button = document.querySelector('.read-more-btn');
 
+    function toggleReadMore() {
+      textBox.classList.toggle('show');
+      button.textContent = textBox.classList.contains('show') ? 'Read Less' : 'Read More';
+    }
 // Day/Night Theme Toggle
 const themeToggle = document.getElementById('theme-toggle');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
