@@ -113,6 +113,9 @@ nav {
 }
 */
 
+.content-box p {
+  color: var(--text); /* Replace with your desired color */
+}
 
 .content-box {
       width: 100%;
