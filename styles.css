@@ -81,6 +81,70 @@ nav {
   transition: opacity 1s ease-in-out;
 }
 
+
+
+
+
+.bg-grey {
+  background: var(--secondary-grey);
+}
+.section {
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin:auto ;
+  padding: 0 2rem;
+}
+ .column-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+.column-container {
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  font-size: 4rem;
+}
+.timeline {
+  position: relative;
+  margin: 3rem 0;
+  width: 100%;
+  max-width: 600px;
+}
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.timeline-dot {
+  width: 2rem;
+  height: 2rem;
+  background: var(--timeline-dot);
+  border-radius: 50%;
+  position: absolute;
+  left: -1rem;
+  top: 0.5rem;
+  border: 3px solid var(--white);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.timeline-content {
+  margin-left: 3rem;
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 4px rgba(100,0,100,0.03);
+}
+
+
+
+
 .slide-img.active {
   opacity: 1;
   position: relative;
