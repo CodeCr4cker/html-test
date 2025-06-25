@@ -123,6 +123,8 @@ nav {
 .content-box {
   background: var(--bg); color: var(--text); border-radius:14px; padding:2em; max-width:650px; width:90vw; max-height:90vh; overflow-y:auto; position:relative;
   box-shadow: 0 4px 30px #0005;
+  overflow-y: auto;        /* Enables vertical scroll */
+  overflow-x: hidden;      /* Hides horizontal scroll */
     /*  width: 100%;
       max-width: 600px;
       background: var(--testimonial-bg);
@@ -186,6 +188,12 @@ nav {
       .content-box {
         padding: 1rem;
         border-radius: 10px;
+        
+  max-width: 100%;
+  max-height: 50vh;
+  overflow-y: auto;
+        
+        
       }
 
       .read-more-btn {
