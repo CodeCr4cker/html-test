@@ -112,6 +112,77 @@ nav {
   font-size: 4rem;
 }
 */
+
+
+.content-box {
+      width: 100%;
+      max-width: 600px;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .text {
+      overflow: hidden;
+      max-height: 100px;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      position: relative;
+    }
+
+    .text.show {
+      max-height: 500px;
+    }
+
+    .fade {
+      position: relative;
+    }
+
+    .fade::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2rem;
+      background: linear-gradient(to top, white, transparent);
+      transition: opacity 0.3s;
+    }
+
+    .text.show .fade::after {
+      opacity: 0;
+    }
+
+    .read-more-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+      padding: 12px;
+      border: none;
+      background-color: #3658dc;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .read-more-btn:hover {
+      background-color: #2b47b5;
+    }
+
+    @media (max-width: 480px) {
+      .content-box {
+        padding: 1rem;
+        border-radius: 10px;
+      }
+
+      .read-more-btn {
+        font-size: 15px;
+        padding: 10px;
+      }
+    }
 .timeline {
   position: relative;
   padding-left: 2rem;
