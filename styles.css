@@ -151,6 +151,26 @@ nav {
 .timeline-content:hover {
   transform: translateY(-4px);
 }
+@media (max-width: 600px) {
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::before {
+    width: 1rem;
+    height: 1rem;
+    left: -0.8rem;
+  }
+
+  .timeline-content {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+}
+
+
+
+
 
 
 
