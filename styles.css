@@ -118,12 +118,21 @@ nav {
 }
 
 .content-box {
-      width: 100%;
+    /*  width: 100%;
       max-width: 600px;
       background: var(--testimonial-bg);
       padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  */
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background: var(--testimonial-bg);
+  border-radius: 1rem;
+  padding: 2rem 1rem 3rem 1rem;
+  overflow: hidden;
     }
 
     .text {
