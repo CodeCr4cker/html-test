@@ -84,7 +84,7 @@ nav {
 
 
 
-
+/*
 .bg-grey {
   background: var(--secondary-grey);
 }
@@ -111,6 +111,7 @@ nav {
   text-align: center;
   font-size: 4rem;
 }
+*/
 .timeline {
   position: relative;
   padding-left: 2rem;
